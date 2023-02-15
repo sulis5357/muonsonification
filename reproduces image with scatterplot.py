@@ -27,9 +27,9 @@ from matplotlib.ticker import MultipleLocator, FormatStrFormatter
 # In[100]:
 
 
-im1 =Image.open("690958main_p1237a1.jpg")
+im1 =Image.open("picture.jpg")
 
-imgWidth, imgHeight = im1.size
+img1width, img1height = im1.size
 im1 = im1.convert("RGBA")
 imgdata = im1.getdata()
 
@@ -41,7 +41,7 @@ x = []
 y = []
 
 for item in imgdata:
-    if (x_pos) == imgWidth:
+    if (x_pos) == img1width:
         x_pos = 1
         y_pos += 1
     else:
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     import matplotlib.pyplot as plt
     get_ipython().run_line_magic('matplotlib', 'inline')
 
-    pic = imageio.imread("690958main_p1237a1.jpg")
+    pic = imageio.imread("picture.jpg")
     plt.figure(figsize = (10,10))
 
   
@@ -71,7 +71,7 @@ gray = lambda rgb : np.dot(rgb[... , :3] , [0.299 , 0.587, 0.114])
 gray = gray(pic)  
 
 plt.figure( figsize = (10,10))
-#plt.imshow(gray, cmap = plt.get_cmap(name = 'gray'))
+plt.imshow(gray, cmap = plt.get_cmap(name = 'gray'))
 
 
 gray[ 2077, 3]
