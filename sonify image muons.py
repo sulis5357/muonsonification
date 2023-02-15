@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
+#This code takes the image of a muon and converts it to a scatterplot.
+#The new dataset can be inputed into Astronfy (Copyright (c) 2020, Clara Brasseur, Scott Fleming, Jennifer Kotler, Kate Meredith All rights reserved)
+#which turns the image into its audible reproduction. Despite its original goal it can be used to sonify any image, however a lot of datapoints will require a lot of computational power.
 
 
 import matplotlib.pyplot as plt
@@ -37,7 +36,7 @@ import matplotlib.pyplot as plt
 # In[3]:
 
 
-im1 =Image.open("aa-removebg-preview-modified-modified.png")
+im1 =Image.open("picture.png")
 
 imgWidth, imgHeight = im1.size
 im1 = im1.convert("RGBA")
@@ -70,7 +69,7 @@ if __name__ == '__main__':
     import matplotlib.pyplot as plt
     get_ipython().run_line_magic('matplotlib', 'inline')
 
-    pic = imageio.imread("aa-removebg-preview-modified-modified.png")
+    pic = imageio.imread("picture.png")
     plt.figure(figsize = (10,10))
 
   
