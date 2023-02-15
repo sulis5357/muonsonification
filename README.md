@@ -6,7 +6,7 @@ Below you can find an example of how the two parts of the program work: the firs
 *Copyright (c) 2020, Clara Brasseur, Scott Fleming, Jennifer Kotler, Kate Meredith All rights reserved.
 
 Hubble Deep Field Reproduced with Scatterplot
-![scatterplot](https://user-images.githubusercontent.com/124456367/219118401-6eb95dd0-752c-4cbd-ae8b-db27be972a29.png)
+![scatterplot](https://user-images.githubusercontent.com/124456367/219119184-79512fcf-3a87-433d-a4b8-f44fa02bfb0a.png)
 
 Sonogram of a Sonified Muon Image 
-!<img width="518" alt="muons" src="https://user-images.githubusercontent.com/124456367/219118913-a3f6b61c-ead0-4562-8671-e9e07fc1e536.png">
+![scatterplot](https://user-images.githubusercontent.com/124456367/219119146-1c6934f1-8680-4a2f-98e5-94b563e82737.png)
