@@ -1,8 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[99]:
-
+#This code reproduce any image as a scatterplot. You can freely set the accuracy of the reproduction by playing with the values of 
+#xmin, xmax, ymin, and ymax. You can also background reduce noisy images by setting N to an higher value.
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -87,7 +84,7 @@ gray_pixels = asarray(gray[:300,:300])
 #y goes from 0 to 2078
 #gray[ x, y]
 
-image = skimage.io.imread(fname="690958main_p1237a1.jpg")
+image = skimage.io.imread(fname="picture.jpg")
 #skimage.io.imshow(image)
 h= image.shape[0]
 w= image.shape[0]
