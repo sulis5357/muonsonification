@@ -1,4 +1,4 @@
-# Sonification of Muon Images
+# Sonification of Astronomical Data
 This is an extension to the Astronify* software (https://astronify.readthedocs.io/en/latest/) to allow the sonification of a spatially distributed dataset. In particular, this code was developed as a master project from Durham University to sonify muon images from the VERITAS Array. 
 
 Below you can find an example of how the two parts of the program work: the first one reproduces any image into a scatterplot, the second takes this new array and converts it into an audible map.
@@ -10,6 +10,53 @@ Hubble Deep Field Reproduced with Scatterplot
 
 Sonogram of a Sonified Muon Image 
 ![scatterplot](https://user-images.githubusercontent.com/124456367/219119146-1c6934f1-8680-4a2f-98e5-94b563e82737.png)
+
+
+
+
+
+
+
+
+ABOUT THIS REPOSITORY 
+
+
+You can read more about the scientific work carried out through this repository on https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4891458#paper-references-widget or my linkedIn https://www.linkedin.com/in/valentina-s-0627a9242/
+
+
+This repository contains scripts for converting images into scatterplots and sonifications. The files are split into:
+
+- reproduce_image.py: A Python file that reproduces an image as a scatterplot.
+- sonifications.py: A Python file that takes scatterplot data and creates a sonification series.
+
+Reproduce Image Script
+  The reproduce_image.py script takes an image file and reproduces it as a scatterplot. The script does the following:
+
+  - Converts the input image to grayscale.
+  - Extracts pixel values and generates scatter data based on these values.
+  - Plots the scatter data to create a visual representation of the image.
+
+Sonifications Script
+  The sonifications.py script creates the data sonification itself. This script does the following:
+
+  - Converts the scatterplot data into an audio series.
+  - Allows for adjusting note spacing and sonification range to customize the auditory representation.
+
+These are independent scripts.
+
+To run the scripts, use the following commands:
+- python reproduce_image.py
+- python sonifications.py
+
+The repository also contains two sample images. The accepted image format is either .png or .jpeg.
+Depending on the size of the picture the processing time can be quite long. 
+Please change the processing parameters to suit your needs. 
+
+
+The noise threshold (in def generate_scatter_data(gray_pixels, threshold=35)) is currently set to 35. It a higher value will result in less image noise and higher processing times but potentially some data loss. 
+
+
+
 
 
 
@@ -47,3 +94,5 @@ It has been shown that the use of images and sounds simultaneously has a positiv
   Inclusivity:
   
 Finally, the most important reason for exploring alternative ways of displaying information and doing data analysis is inclusivity. All sciences represent data using traditional visualization tools, making it extremely challenging for visually impaired individuals to approach research. Using audio can open the doors to a world of opportunities through which to cultivate their interests.
+
+![](https://komarev.com/ghpvc/?username=vsulis5357)
